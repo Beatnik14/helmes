@@ -1,0 +1,15 @@
+p{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.title{
+    margin: 3vh 7%;
+}
+div:focus{
+    outline: none;
+}
+p:focus{
+    outline: none;
+}

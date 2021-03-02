@@ -1,0 +1,20 @@
+<div class="input">
+    <input type="text" placeholder="Search user from GitHub" [(ngModel)]="search">
+    <button (click)="onSearch()" type="button" style="cursor: pointer;">
+        <mat-icon class="icon">search</mat-icon>
+    </button>
+</div>
+<div class="searchesTitle">
+    <p>Last 3 searches</p>
+</div>
+<div class="searchHistory">
+    <div class="singleSearchHistory" (click) = "onSearchHistory(searchHistory[0])">
+        <p>{{searchHistory[0]}}</p>
+    </div>
+    <div class="singleSearchHistory" (click) = "onSearchHistory(searchHistory[1])">
+        <p>{{searchHistory[1]}}</p>
+    </div>
+    <div class="singleSearchHistory" (click) = "onSearchHistory(searchHistory[2])">
+        <p>{{searchHistory[2]}}</p>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+button{
+    border: 1px solid rgb(216, 216, 216);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 35, 82);
+    width: 5vw;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 4vh;
+    border-radius: 5%;
+    margin: 5vh 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+button:hover {
+    animation-name: background-color2;
+    animation-duration: 500ms;
+    animation-fill-mode:forwards;
+ 
+  }
+@keyframes background-color2 {
+    100% {
+        background-color: #1bbb31;
+        color: white;
+        border-color: #1bbb31;
+    }
+}
+button:focus {
+    outline: 0 none;
+}

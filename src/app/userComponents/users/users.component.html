@@ -1,0 +1,22 @@
+<div class="title">
+    <div>
+        <p>GitHub most popular users</p>
+    </div>
+    <div class="icons">
+        <mat-icon class="icon" [ngClass]="{'opacity': gridMode}" (click)="OnColumn()">view_week</mat-icon>
+        <mat-icon class="icon" [ngClass]="{'opacity': !gridMode}" (click)="OnToggle()">view_quilt</mat-icon>
+    </div>
+</div>
+<hr>
+
+<div [ngClass]="{'usersGrid': gridMode,'users': !gridMode}">
+
+    <cdk-virtual-scroll-viewport class="example-viewport" itemSize="300">
+        <app-user *cdkVirtualFor="let item of users" [user]="item" [routerLink]="['/user',item.login]"
+        [ngClass]="{'singleUserGrid': gridMode,'singleUser': !gridMode}" [gridModeValue]="gridMode" class="example-item" ></app-user>
+      </cdk-virtual-scroll-viewport>
+    <!-- <app-user *ngFor="let item of users" [user]="item" [routerLink]="['/user',item.login]"
+        [ngClass]="{'singleUserGrid': gridMode,'singleUser': !gridMode}" [gridModeValue]="gridMode">
+    </app-user> -->
+
+</div>

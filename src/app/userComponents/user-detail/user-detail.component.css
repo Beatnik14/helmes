@@ -1,0 +1,62 @@
+
+.userBox{
+    background-color: rgba(235, 233, 233, 1);
+    margin: 3vh auto;
+    height: 70vh;
+    width: 50%;
+    padding: 2vh 2vw;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 7px;
+    color: #000428;
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    margin: auto auto;
+    height: 100%;
+    width: 100%;
+}
+.flexBox{
+    display: flex;
+    flex-direction: column;
+} 
+.image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.img {
+    width: auto;
+    height: 600px;
+    margin: auto 0;
+    object-fit: cover;    
+    max-width: 400px;
+}
+.userName{
+    width: 50%;
+    height: auto;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 3vh;
+}
+
+#userName{
+    margin: 3vh auto;
+    height: 5vh;
+    width: 52%;
+    text-align: left;
+    
+}
+h2{
+    font-size: 2.5rem;
+}

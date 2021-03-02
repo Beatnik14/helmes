@@ -1,0 +1,13 @@
+<div [ngClass]="{'card flexBox': !gridModeValue, 'cardGrid flexBoxGrid':gridModeValue}">
+    <div [ngClass]="{'image': !gridModeValue, 'imageGrid':gridModeValue}">
+        <img [ngClass]="{'img': !gridModeValue, 'imgGrid':gridModeValue}" [src]="user.avatar_url" alt="image">
+    </div>
+    <div class="userName">
+        <p class="title">{{user.login | titlecase}}</p>
+        <p>{{user.type}}</p>
+    </div>
+    <div class="repos">
+        <p class="repoTitle">User Repos:</p>
+        <p *ngFor="let repo of userRepos">{{repo.name}}</p>
+    </div>
+</div>

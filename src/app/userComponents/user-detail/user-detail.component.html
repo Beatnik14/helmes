@@ -1,0 +1,31 @@
+<app-navigate></app-navigate>
+<div id="userName">
+    <h2>{{singleUser?.login | titlecase}}</h2>
+    <hr>
+</div>
+
+
+<div class="userBox ">
+    <div class="image">
+        <img class="img" [src]="singleUser?.avatar_url" alt="">
+
+    </div>
+    <div class=" card flexBox">
+        <div class="userName">
+            <p class="title">{{singleUser?.login | titlecase}}</p>
+            <p>{{singleUser?.type}}</p>
+        </div>
+        <div class="userName">
+            <h1 class="title">User Repos</h1>
+            <p *ngFor="let repo of userRepos">{{repo?.name}}</p>
+        </div>
+        <div class="userName">
+            <h1 class="title">User Organizations</h1>
+            <p *ngFor="let org of userOrgs">{{org?.login}}</p>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+</div>
